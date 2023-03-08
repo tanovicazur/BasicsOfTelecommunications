@@ -18,7 +18,7 @@ t = linspace(0, 0.1, 1000000);
 extension = zeros(1,((length(f)-1)/2) - length(x1f));
 x1f = [extension x1f];
 x2f = [extension x2f];
-%{
+
 argX = 0;
 xtmp1 = x1f .* exp(1j * argX);
 xtmp2 = x2f .* exp(1j * argX);
@@ -236,7 +236,7 @@ plot(t(1:40000), B2(1:40000), 'r');
 xlabel("t[s]");
 ylabel("B2(t)");
 grid on;
-%}
+
 
 
 
